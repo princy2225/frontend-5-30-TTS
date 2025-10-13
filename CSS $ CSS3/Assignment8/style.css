@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+.button{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px lightskyblue;
+}
+h1{
+    color: rgb(145, 107, 11);
+    animation: heartBeat 2s infinite;
+    margin-top: 5%;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    box-shadow: 1px 2px 2px 1px rgb(148, 124, 127);
+}
+.btn2{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    box-shadow: 1px 2px 2px 1px rgb(148, 124, 127);
+}
+.btn3{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    box-shadow: 1px 2px 2px 1px rgb(148, 124, 127);
+}
+.btn:hover,
+.btn2:hover,
+.btn3:hover{
+    background-color: paleturquoise;
+    transition: 0.4s ease-in-out;
+}

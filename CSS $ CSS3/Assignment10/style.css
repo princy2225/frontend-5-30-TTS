@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+.form{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 8%;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+}
+legend{
+    font-size: 30px;
+    padding: 30px;
+    animation: bounce 2s infinite;
+}
+label{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.input{
+    width: 250px;
+    height: 25px;
+}
+.msg{
+    width: 240px;
+}
+.btn{
+    width: 120px;
+    height: 32px;
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.bton{
+    width: 120px;
+    height: 32px;
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.input:focus,
+.msg:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+    background-color: #f9fcff;
+}
+.btn:hover, 
+.bton:hover{
+    background-color: lightsalmon;
+}
+.btn:focus, 
+.bton:focus{
+    background-color: greenyellow;
+}

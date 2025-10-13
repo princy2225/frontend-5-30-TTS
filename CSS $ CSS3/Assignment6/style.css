@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+#header{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    background: url('images/flipkart\ bg.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo {
+    width: 20%;
+}
+.logo h1{
+    font-size: 45px;
+    color: white;
+    margin: 15px;
+}
+.search-box{
+    width: 50%;
+}
+.search{
+    width: 450px;
+    height: 25px;
+    padding: 5px;
+    margin-top: 3%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.social-media{
+    width: 30%;
+    margin-top: 25px;
+}
+.social-media i{
+    font-size: 28px;
+    margin-left: 40px;
+}
+.social-media i:hover{
+    color: white;
+}
+#navbar{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-bottom: 1px solid;
+}
+.navbar-link{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-link li{
+    list-style-type: none;
+}
+.navbar-link li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    margin-left: 80px;
+    padding: 5px 20px;
+}
+.navbar-link li a:hover{
+    color: white;
+}
+#slider{
+    width: 100%;
+    border-bottom: 1px solid;
+    background: url('images/flipkart\ sale1.webp')no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.slider-txt{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 20px; 
+}
+.slider-txt h1{
+    font-size: 32px;
+    color: red;
+}
+.slider-txt p{
+    font-size: 20px;
+    color: rgb(22, 108, 0);
+}
+.butn{
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+    font-size: 17px;
+    margin-left: 40%;
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+#content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+.leftsidebar{
+    width: 20%;
+    height: auto;
+}
+.sidebar-link li{
+    width: 100%;
+    list-style-type: none;
+    display: block;
+    padding: 25px;
+    margin: 5px;
+}
+.sidebar-link li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black; 
+}
+.right1{
+    width: 78%;
+}
+.products{
+    width: 25%;
+    height: 350px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 2px 1px rgb(152, 178, 186);
+    margin-left: 30px;
+}
+.products img{
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(0.9);
+}
+.products img:hover{
+    transform: scale(1);
+}
+.products .but{
+    width: 100px;
+    height: auto;
+    padding: 5px;    
+}
+#left1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.rightsidebar{
+    width: 40%;
+    height: auto;
+}
+.address p{
+    font-size: 20px;
+    margin: 10px;
+}
+.rightside{
+    width: 59%;
+}
+.google-map{
+    margin: 10px;
+}
+#footer{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    background-color: rgb(3, 91, 118);
+}
+.footer-link{
+    margin: 10px;
+    padding: 5px;
+}
+.footer-link li{
+    list-style-type: none;
+}
+.footer-link li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.par{
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+.footer-map li{
+    font-size: 18px;
+    list-style-type: none;
+}
+.footer-map li a{
+    text-decoration: none;
+     color: white;
+}
+.newsletter p{
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+.form{
+    font-size: 18px;
+    color: white;
+}
+.email{
+    width: 220px;
+    height: 22px;
+}

@@ -1,0 +1,36 @@
+body{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f8fa;
+      color: #333;
+    }
+#grid{
+     width: 80%;
+     height: auto;
+     margin: auto;
+     background-color: white;
+     box-shadow: 1px 2px 2px 1px lightgrey;
+     border-radius: 5px;
+}
+h1{
+    color: rgb(62, 74, 208);
+    text-align: center;
+    padding: 20px;
+}
+.images{
+     width: 60%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 15px;
+     justify-items: center;
+     align-items: center;
+     margin-left: 10%;
+     padding: 10px;
+  }
+.images img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+} 
+    

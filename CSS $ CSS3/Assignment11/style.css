@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+.container{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 4px 4px lightskyblue;
+}
+.container h1{
+    font-size: 33px;
+    color: darkcyan;
+}
+.container h1::before{
+    content: "⭐";
+}
+p{
+    font-size: 22px;
+    color: #555;
+    padding: 5px;
+    line-height: 3;
+    text-align: justify;
+}
+p::first-line{
+    color: #f77740;
+    font-weight: bold;
+    font-size: 20px;
+}
+.links{
+    text-align: left;
+}
+.links ul li{
+    list-style-type: none;
+    font-size: 22px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: black;
+}
+.links ul li a:hover{
+    color: #ff6600;
+    text-decoration: underline;
+}
+.links ul li  a:active{
+    color: #009933;
+}
+.links ul li  a:visited{
+    color: #800080;
+}

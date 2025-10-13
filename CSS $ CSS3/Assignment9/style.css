@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+#main-container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+.header{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    background: url('image/background\ img.webp')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px;
+    margin-top: 15px;
+}
+.header h1{
+    width: 30%;
+    font-size: 37px;
+    margin: 20px;
+    color: rgb(37, 43, 88);
+}
+.input{
+    width: 400px;
+    height: 32px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 20px;
+}
+.login{
+    width: 10%;
+    height: 32px;
+    border-radius: 10px;
+    background-color: rgb(174, 117, 117);
+    color: white;
+    font-size: 18px;
+    margin: 20px;
+    margin-top: 22px;
+    margin-left: 20%;
+}
+.login:hover{
+    background-color: lightseagreen;
+    transition: 0.5s ease;
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.con1{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    padding: 5px;
+    border: 10px solid transparent;
+    border-image: url('image/borders-png.png') 30 round;
+    text-align: center;
+}
+.con1 h2{
+    font-size: 30px;
+    padding: 10px;
+    color: darkcyan;
+}
+.con1 p{
+    font-size: 18px;
+    text-indent: 22px;
+    color: dimgray;
+}
+.btn{
+    width: 23%;
+    height: 35px;
+    margin-top: 2%;
+    border-radius: 10px;
+    border-color: blue;
+    margin: 20px;
+    font-size: 15px;
+}
+.bton{
+    width: 23%;
+    height: 35px;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: darkslategrey;
+}
+.fot1,
+.fot2,
+.fot3{
+    width: 150px;
+    height: auto;
+    background-color: rgb(97, 199, 187);
+    padding: 10px;
+    margin: 10px;
+}
+.fot1 h3,
+.fot2 h3,
+.fot3 h3{
+    font-size: 20px;
+}
+.fot1 span,
+.fot2 span,
+.fot3 span{
+    font-size: 35px;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;  
+    flex-direction: row;        
+    align-items: center;        
+    justify-content: space-between;
+    text-align: center;
+    background: url('image/background img.webp') no-repeat center/cover;
+    padding: 10px 0px;                   
+}
+
+.header h1{
+    width: 20%;
+    font-size: 28px;
+}
+.input{
+    width: 30%;
+    margin-bottom: 20px;
+}
+.login{
+    width: 100px;
+    margin-left: 0px;
+}
+.con1{
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.con1 h2{
+    font-size: 24px;
+}
+.con1 p{
+    font-size: 16px;
+}
+.btn,
+.bton{
+    width: 30%;
+    font-size: 16px;
+    margin: 10px;
+}
+.footer{
+    width: 100% !important;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 120px !important;
+}
+.fot1,
+.fot2,
+.fot3{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+}
+.fot1 h3,
+.fot2 h3,
+.fot3 h3{
+    font-size: 18px;
+}
+.fot1 span,
+.fot2 span,
+.fot3 span{
+    font-size: 28px;
+}
+
+   
+}

@@ -1,0 +1,53 @@
+:root{
+      --primary-color: #007bff;
+      --accent-color: #ff6b6b;
+      --bg-color: #f7f7f7;
+      --text-color: #333;
+}
+body{
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      box-sizing: border-box;
+}
+h2{
+      text-align: center;
+      color: var(--primary-color);
+      margin-top: 30px;
+      font-size: 30px;
+}
+section{
+      width: 70%;
+      height: auto;
+      margin: auto;
+      padding: 25px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 5%;
+    }
+
+.animation-box{
+      width: 100px;
+      height: 100px;
+      background-color: var(--accent-color);
+      border-radius: 10px;
+      margin: 30px auto;
+      animation: moveBox 4s infinite alternate ease-in-out;
+}
+
+@keyframes moveBox{
+0%{
+     transform: translateX(0);
+     background-color: var(--accent-color);
+}
+50%{
+     background-color: #ffcc00;
+}
+100%{
+     transform: translateX(400px);
+     background-color: var(--primary-color);
+}
+
+  }

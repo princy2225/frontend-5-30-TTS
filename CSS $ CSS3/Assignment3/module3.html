@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Style Card</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src='main.js'></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color: lightgray;
+        }
+        #content{
+            width: 40%;
+            height: auto;
+            margin: auto;
+            margin-top: 10%;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 1px 2px 2px 1px rgb(145, 125, 125);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="content">
+
+        <div class="data">
+            <table style="width: 100%;">
+                <tr>
+                  <td> <h1 style="margin: 10px; animation: 2s infinite bounceIn;">Credit Card Details</h1></td>
+                </tr>
+               
+                <tr>
+                    <td><hr></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Card Number" style="width: 300px; height: auto; margin: 5px;
+                    padding: 8px;"></td>
+                </tr>
+
+                <tr>
+                    <td><select name="month" style="width: 150px; height: auto;
+                    margin: 5px; padding: 8px;">
+                    <option value="">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    </select>
+
+                    <select name="year" style="width: 158px; height: auto;
+                    margin: 5px; padding: 8px;">
+                    <option value="">Year</option>
+                    <option value="1">2020</option>
+                    <option value="2">2021</option>
+                    <option value="3">2022</option>
+                    <option value="4">2023</option>
+                    <option value="5">2024</option>
+                    <option value="6">2025</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td><input type="file" placeholder="CVV" style="width: 25s0px; height: auto; margin: 5px; margin-right: 60px">
+                    </td></tr>
+                
+                <tr>
+                <td>  <button type="button" style="width: 320px; height: auto;
+                margin: 5px; padding: 8px; font-size: 18px;border-radius: 5px;background-color: rgb(119, 208, 124);color: white;">Proceed</button></td>
+                </tr>
+                
+                <tr>
+                <td><button type="submit" style="width: 320px; height: auto;
+                margin: 5px; padding: 8px; font-size: 18px;border-radius: 5px;background-color: rgba(72, 114, 198, 0.985);color: white;">Pay With PayPal</button></td>
+               </tr>
+
+            </table>
+        </div>
+    </section>
+</body>
+</html>

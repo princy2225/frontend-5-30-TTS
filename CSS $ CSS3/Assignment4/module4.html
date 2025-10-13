@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Customizing List Style</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color: lightgrey;
+            margin-top: 5%;
+        }
+        #content{
+            width: 100%;
+            height: auto;
+        }
+        .unorder, .order{
+            width: 30%;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 1px 2px 2px 1px rgb(129, 107, 107) ;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        h2{
+            font-size: 25px;
+            text-align: center;
+        }
+        .custom-list, .custom-list1 {
+            list-style-type: none;
+            font-size: 22px;
+            text-transform: capitalize;
+        }
+
+        .custom-list li::marker {
+            content: "🍎"; 
+            font-size: 19px;
+        }
+        .custom-list1 li::before{
+            content: "📃";
+        }
+        .custom-list .yellow::after{
+            content: "🍌";
+        }
+        .red{
+            color: red;
+        }
+        .custom-list1 .blue::after{
+            content: "📘";
+        }
+        .custom-list1 .green::before{
+            content: "📗";
+        }
+        .blue{
+            color: blue;
+        }
+        .green{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+<section id="content">
+       <div class="unorder">
+        <h2>Unordered List</h2>
+        <hr>
+    <ul class="custom-list">
+       <li class="red">Apple</li>
+       <li class="yellow">Banana</li>
+       <li class="red">Cherry</li>
+   </ul>
+   </div>
+
+   <div class="order">
+        <h2>Ordered List</h2>
+        <hr>
+    <ol class="custom-list1">
+        <li>Background Skills</li>
+        <li class="blue">HTML</li>
+        <li>CSS</li>
+        <li class="green">Programming</li>
+        <li>Data Base</li>
+    </ol>
+   </div>
+
+</section>
+ 
+
+</body>
+</html>

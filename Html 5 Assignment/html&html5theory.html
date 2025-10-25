@@ -1,0 +1,106 @@
+<!--
+Que-1 Difference between html & html5 ?
+
+ 
+A: Definition: 
+HTML: HyperText Markup Language is the older version used to create web pages.
+HTML5: HTML5 is the latest version of HTML that adds mordern web features and better structure.
+
+New Sementic elements: 
+HTML: developer used <div> for everything.
+HTML5: Introduced semantic tags like <header>, <section>, <atricle>, <aside>, <nav>, <footer>.
+    
+Multimedia Support:
+HTML: Needs external plugins like Flash for audio/video.
+HTML5: Built-in <audio> and <video> tags – no plugin needed.
+    
+Graphics and Animation:
+HTML: No support drawing.
+HTML5: Intoduces <canvas>, <svg> for 2D Graphics and Animation.
+    
+Form Enhancement:
+HTML: Limited input types(like text,password).
+HTML5: New input types: email, url, number, range, date, color, etc.
+       New attributes: placeholder, required, pattern, autofocus. 
+       
+Browser Compelibity:
+HTML: (IE:6-8)old Browser supported.
+HTML5: supported by all mordern Browsers (Chrome, Edge, Firefox, Safari).
+
+Performance and Mobile:
+HTML: Not optimized for mobile devices.
+HTML5: Mobile-friendly, supports responsive designs and touch input.-->
+
+
+<!-- 
+Que-2 What are the additional tags used in HTML5 ?
+
+A: Many new tags to make web pages sementic, multimedia-friendly, interactive.
+
+1) Sementic Structure tags
+2) Multi-media tags
+3) Graphics and Drawing tags
+4) Form related tags
+5) Scripting and interactive tags
+
+1) Sementic Structure tags:
+A: Tag	                                     Description	                                             Example
+<header>	             Defines the header of a document or section                 <header><h1>MyWebsite</h1></header> 
+                          (usually contains logo, navigation, etc.)	                 
+<nav>	                 Defines a navigation menu with links.	                     <nav><a href="#home">Home</a></nav>
+<section>	             Groups related content into sections.	                     <section><h2>About Us</h2></section>
+<article>	             Represents an independent piece of contentlike
+                         a blog post or news article.                 <article><h2>News</h2><p>Latest update...</p></article>	
+<aside>             	Defines content that’s related but not part of 
+                         the main content (like a sidebar or ad).	                     <aside>Related links</aside>
+<footer>	            Defines the footer of a document or section.	               <footer>© 2025 My Website</footer>
+<main>	                Represents the main content area of the 
+                         page (only one per page).	                                      <main><h1>Welcome</h1></main>
+<figure>	            Groups media elements like images or diagrams with captions.	<figure><imgsrc="pic.jpg">
+                                                                             <figcaption>Nature view</figcaption></figure>
+<figcaption>	        Provides a caption for a <figure>.	                              Included inside <figure>
+
+    
+2) Multi-media tags:
+A:  Tag                                        Description                                      Example                 
+<audio>                 Embeds audio files.                                 <audio controls src="music.mp3"></audio>        
+<video>                 Embeds video files.                                <video controls width="400" src="movie.mp4"></video>
+<source>               Defines multiple media sources 
+                        for <audio> or <video>.                            <source src="movie.mp4" type="video/mp4">
+<track>            Adds subtitles or captions to a video.                  <track kind="subtitles" src="subs.vtt">            
+
+
+3) Graphics and Drawing tags:
+A: Tag                                        Description                                       Example   
+<canvas>               Used for drawing graphics using JavaScript.             <canvas id="myCanvas"></canvas>
+<svg>                   Embeds vector graphics (scalable).         <svg><circle cx="50" cy="50" r="40" fill="blue"/></svg>
+
+
+4) Form related tags:
+A:  Tag                                       Description                               Example                                   
+<datalist>           Provides a list of predefined options                   <input list="browsers"><datalist id="browsers">
+                   for an input field.                                          <option>Chrome</option></datalist>
+<output>        Displays the result of a calculation.                       <output id="result"></output>
+<progress>           Shows progress of a task.                              <progress value="70" max="100"></progress>      
+<meter>             Displays a scalar measurement within a known range.       <meter value="0.7">70%</meter>   
+
+
+5) Scripting and interactive tags:
+A: Tag                                  Description                                          Example  
+<details>           Creates a collapsible section users
+                    can expand or hide.                     <details><summary>More info</summary><p>Details here...</p></details>
+<summary>          Defines the visible heading of a <details> element.                    Shown above.         
+<dialog>       Represents a popup or modal dialog box.                          <dialog open>Welcome!</dialog>
+<template>         Holds reusable HTML code that’s hidden 
+                          until used by JavaScript.                <template><p>This is hidden template</p></template>
+<time>                Represents a specific time or date.            <time datetime="2025-10-24">October 24, 2025</time>
+
+
+| Category                  | Example Tags                                                 |
+| ------------------------- | ------------------------------------------------------------ |
+| **Semantic**              | `<header>`, `<nav>`, `<article>`, `<section>`, `<footer>`    |
+| **Multimedia**            | `<audio>`, `<video>`, `<source>`, `<track>`                  |
+| **Graphics**              | `<canvas>`, `<svg>`                                          |
+| **Forms**                 | `<datalist>`, `<output>`, `<progress>`, `<meter>`            |
+| **Interactive/Scripting** | `<details>`, `<summary>`, `<dialog>`, `<template>`, `<time>` |
+-->

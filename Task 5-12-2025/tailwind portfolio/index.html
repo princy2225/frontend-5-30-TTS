@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tailwind Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Navbar -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+    <h1 class="text-2xl font-semibold tracking-wide">My Portfolio</h1>
+    <ul class="hidden md:flex gap-6 text:sm font-medium">
+      <li class="hover:text-blue-600 cursor-pointer">Home</li>
+      <li class="hover:text-blue-600 cursor-pointer">Projects</li>
+      <li class="hover:text-blue-600 cursor-pointer">Skills</li>
+      <li class="hover:text-blue-600 cursor-pointer">Contact</li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero section -->
+<section class="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4"> Hi, I'm <span class="text-blue-600">Princy</span> </h2>
+
+    <p class="text-lg text-gray-600 leading-relaxed"> A passionate front-end developer creating responsive websites, UI components, and modern designs. </p>
+
+    <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 hover:shadow-lg transition duration-300"> View My Work</button>
+  </div>
+
+  <div class="flex justify-center mt-17">
+    <img src="image/mine-image.jpg" class="w-100 rounded-2xl shadow-lg hover:scale-105 transition duration-300" alt="my image">
+  </div>
+</section>
+
+<!-- About section -->
+<section class="container mx-auto px-4 py-10">
+  <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+  <p class="text-gray-600 max-w-3xl leading-relaxed"> I love building modern, clean and fully responsive web interfaces. I focus on usability, accessibility, and high-quality design patterns. Using tools like Tailwind, Bootstrap, Html and Css, I convert ideas into beautiful digital experiences. </p>
+</section>
+
+<!-- Project section -->
+<section class="bg-gray-50 py-12">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-semibold mb-10">Recent Projects</h3>
+
+    <!-- Responsive grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project card -->
+      <div class="bg-white rounded-xl shadow p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="https://techcrunch.com/wp-content/uploads/2023/05/google-io-2023-project-tailwind.jpg?w=1024" class="rounded-lg mb-4">
+        <h4 class="text-xl font-semibold mb-2">Project 1</h4>
+        <p class="text-gray-600 text-sm leading-relaxed"> A clean and responsive web app built using modern UI techniques.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="https://cdn.sanity.io/images/b0qgweu1/production/07fa039aa742c208475f81db11b5e8b173897140-1866x830.png" class="rounded-lg mb-4">
+        <h4 class="text-xl font-semibold mb-2">Project 2</h4>
+        <p class="text-gray-600 text-sm"> A front-end interface designed with Tailwind utilities. </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="https://i.ytimg.com/vi/_48NQ2e6Cdk/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDECBbeR6eiwicf1ly95Q5mc82J1g" class="rounded-lg mb-4">
+        <h4 class="text-xl font-semibold mb-2">Project 3</h4>
+        <p class="text-gray-600 text-sm"> Smooth animations, responsive grids, and polished UI.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills section -->
+<section class="container mx-auto px-4 py-16">
+  <h3 class="text-3xl font-semibold mb-8">Skills</h3>
+
+  <div class="flex flex-wrap gap-4">
+    <span class="px-4 py-2 bg-white shadow rounded-full hover:bg-blue-600 hover:text-white transition">HTML</span>
+    <span class="px-4 py-2 bg-white shadow rounded-full hover:bg-blue-600 hover:text-white transition">CSS</span>
+    <span class="px-4 py-2 bg-white shadow rounded-full hover:bg-blue-600 hover:text-white transition">Tailwind</span>
+    <span class="px-4 py-2 bg-white shadow rounded-full hover:bg-blue-600 hover:text-white transition">Wordpress</span>
+    <span class="px-4 py-2 bg-white shadow rounded-full hover:bg-blue-600 hover:text-white transition">Bootstrap</span>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-gray-300 py-7 text-center">
+  <p>© 2025 Princy - All Rights Reserved</p>
+</footer>
+
+   
+
+</body>
+</html>

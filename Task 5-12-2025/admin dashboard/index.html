@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin dashboard ui</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- cdn js script -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T
++ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <!-- bootstrap icon cdn -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ <style>
+        body {
+            background: #f4f6f9;
+        }
+        .sidebar {
+            height: 100vh;
+            background: #343a40;
+            color: #fff;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: block;
+        }
+        .sidebar a:hover {
+            background: #495057;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+      <div class="container-fluid">
+         <div class="row">
+
+<!-- Sidebar -->
+        <div class="col-md-2 sidebar">
+            <h4 class="text-center mb-4 text-bold">Admin Panel</h4>
+            <a href="#"><i class="bi bi-speedometer2"></i> Dashboard</a>
+            <a href="#"><i class="bi bi-people"></i> Users</a>
+            <a href="#"><i class="bi bi-box"></i> Products</a>
+            <a href="#"><i class="bi bi-table"></i> Orders</a>
+            <a href="#"><i class="bi bi-gear"></i> Settings</a>
+        </div>
+
+<!-- Main content -->
+        <div class="col-md-10 col-12 p-4">
+
+<!-- navbar-->
+        <nav class="navbar navbar-light bg-white shadow-sm mb-4 p-3">
+            <span class="navbar-brand fw-bold">Dashboard</span>
+            <button class="btn btn-dark">Logout</button>
+            </nav>
+
+<!-- Cards row -->
+         <div class="row g-3">
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-white bg-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Users</h5>
+                            <h3>1,250</h3>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-white bg-success">
+                    <div class="card-body">
+                            <h5 class="card-title">Sales</h5>
+                            <h3>$23,40</h3>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-white bg-warning">
+                    <div class="card-body">
+                            <h5 class="card-title">Orders</h5>
+                            <h3>320</h3>
+                        </div>
+                    </div>
+                </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="card text-white bg-danger">
+                    <div class="card-body">
+                            <h5 class="card-title">Pending</h5>
+                            <h3>18</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Table -->
+            <div class="card mt-4">
+                <div class="card-header bg-dark text-white">Recent Orders</div>
+
+                <div class="card-body table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>#</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Amit Sharma</td>
+                                <td>Pizza</td>
+                                <td>&#8377;120</td>
+                                <td><span class="badge bg-success">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Riya Patel</td>
+                                <td>Burger</td>
+                                <td>&#8377;80</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Rajan rathod</td>
+                                <td>Pasta</td>
+                                <td>&#8377;180</td>
+                                <td><span class="badge bg-danger">Cancelled</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Priya raj</td>
+                                <td>Noodles</td>
+                                <td>&#8377;95</td>
+                                <td><span class="badge bg-success text-white">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Devangi sharma</td>
+                                <td>Italian</td>
+                                <td>&#8377;230</td>
+                                <td><span class="badge bg-warning text-black">Pending</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

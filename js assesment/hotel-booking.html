@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="app"></div>
+
+<script>
+    const app = document.getElementById("app");
+
+    function createLabel(text) {
+        const label = document.createElement("label");
+        label.appendChild(document.createTextNode(text));
+        return label;
+    }
+
+    function createInput(type) {
+        const input = document.createElement("input");
+        input.type = type;
+        return input;
+    }
+
+    // Form
+    const form = document.createElement("form");
+
+    // Choice of Booking
+    form.appendChild(createLabel("Choice of Booking"));
+    const bookingSelect = document.createElement("select");
+
+    const options = ["Select", "Full Day Booking", "Half Day Booking", "Hourly Booking"];
+    options.forEach(opt => {
+        const option = document.createElement("option");
+        option.appendChild(document.createTextNode(opt));
+        bookingSelect.appendChild(option);
+    });
+
+    form.appendChild(bookingSelect);
+
+    // User Name
+    form.appendChild(createLabel("User Name"));
+    const nameInput = createInput("text");
+    form.appendChild(nameInput);
+
+    // Mobile Number
+    form.appendChild(createLabel("Mobile Number"));
+    const mobileInput = createInput("tel");
+    form.appendChild(mobileInput);
+
+    // Email
+    form.appendChild(createLabel("Email"));
+    const emailInput = createInput("email");
+    form.appendChild(emailInput);
+
+    // Number of Persons
+    form.appendChild(createLabel("No of Persons"));
+    const personInput = createInput("number");
+    form.appendChild(personInput);
+
+    // Date
+    const dateLabel = createLabel("Date");
+    const dateInput = createInput("date");
+
+    // Time
+    const timeLabel = createLabel("Time");
+    const timeInput = createInput("time");
+
+    // Slot
+    const slotLabel = createLabel("Slot");
+    const slotSelect = document.createElement("select");
+    ["Breakfast", "Lunch", "Dinner"].forEach(slot => {
+        const opt = document.createElement("option");
+        opt.appendChild(document.createTextNode(slot));
+        slotSelect.appendChild(opt);
+    });
+
+    // Initially hidden
+    dateLabel.style.display = dateInput.style.display = "none";
+    timeLabel.style.display = timeInput.style.display = "none";
+    slotLabel.style.display = slotSelect.style.display = "none";
+
+    form.appendChild(dateLabel);
+    form.appendChild(dateInput);
+    form.appendChild(timeLabel);
+    form.appendChild(timeInput);
+    form.appendChild(slotLabel);
+    form.appendChild(slotSelect);
+
+    // Button
+    const btn = document.createElement("button");
+    btn.type = "submit";
+    btn.appendChild(document.createTextNode("Book Now"));
+    form.appendChild(btn);
+
+    app.appendChild(form);
+
+    // Booking selection logic
+    bookingSelect.addEventListener("change", function () {
+        dateLabel.style.display = dateInput.style.display = "none";
+        timeLabel.style.display = timeInput.style.display = "none";
+        slotLabel.style.display = slotSelect.style.display = "none";
+
+        if (this.value === "Full Day Booking") {
+            dateLabel.style.display = dateInput.style.display = "block";
+        }
+        else if (this.value === "Half Day Booking") {
+            dateLabel.style.display = dateInput.style.display = "block";
+            slotLabel.style.display = slotSelect.style.display = "block";
+        }
+        else if (this.value === "Hourly Booking") {
+            dateLabel.style.display = dateInput.style.display = "block";
+            timeLabel.style.display = timeInput.style.display = "block";
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin-top: 100px;
+}
+
+/* Date Box */
+.date-box {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 4px solid teal;
+    border-radius: 10px;
+    background: #d9f2f2;
+    margin-bottom: 30px;
+}
+
+/* Clock Box */
+.clock-box {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #00ffcc, #ff00cc);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}

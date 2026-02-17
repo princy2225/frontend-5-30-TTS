@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            document.getElementById("btn1").style="width:200px;height:30px;margin:auto;margin-left:500px;background-color:blue;color:white;";
+            document.getElementById("btn2").style="width:200px;height:30px;margin:auto;margin-left:100px;background-color:green;color:white;";
+
+            // Button Click Event for Addition
+            $("#btn1").click(function(){
+                var a =parseInt(prompt("Enter a value:"));
+                var b =parseInt(prompt("Enter b value:"));
+                var c = a + b;
+              document.getElementById("res").innerHTML="Addition is: " + c;
+            })
+
+            // Button Click Event for Subtraction
+            $("#btn2").click(function(){
+                var a=parseInt(prompt("Enter a value:"));
+                var b=parseInt(prompt("Enter b value:"));
+                var c=a-b;
+              document.getElementById("res").innerHTML="Subtraction is: " + c;
+            })
+        })
+    </script>
+</head>
+<body>
+    <p id="res"></p>
+    <button type="button" id="btn1">Addition</button>
+    <button type="button" id="btn2">Substraction</button>
+</body>
+</html>

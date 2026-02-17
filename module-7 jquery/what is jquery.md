@@ -16,10 +16,10 @@
 
 # Difference: Basic vs Effects vs Advanced
 
-  Topic	             Description
-  Basic	        Selectors, Events, DOM Manipulation
-  Effects	     Animations like fade, slide, hide
-  Advanced	     Animation, AJAX, Chaining, Traversing
+  **Topic**  	            **Description**
+ - Basic	        - Selectors, Events, DOM Manipulation
+ - Effects	     - Animations like fade, slide, hide
+ - Advanced	     - Animation, AJAX, Chaining, Traversing
 
 **Key Characteristics:**
 

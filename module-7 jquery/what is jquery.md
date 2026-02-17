@@ -14,6 +14,13 @@
 
    jquery is light weight client side scripting language
 
+# Difference: Basic vs Effects vs Advanced
+
+  Topic	             Description
+  Basic	        Selectors, Events, DOM Manipulation
+  Effects	     Animations like fade, slide, hide
+  Advanced	     Animation, AJAX, Chaining, Traversing
+
 **Key Characteristics:**
 
 - **Lightweight**: Approx 30KB in size (minified version)

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+<!-- jQuery Advanced Example
+     Advanced concepts include:
+       Animation
+       Chaining
+       AJAX
+       addClass() / removeClass()
+       Traversing (parent, children) 
+       
+       .animate() → Custom animation
+       .addClass() → Adds CSS class
+       Method chaining → Multiple methods in one line-->
+
+    <button id="animate">Animate Box</button>
+    <button id="style">Add Style</button>
+
+    <div id="box"></div>
+    <p id="text">This is advanced jQuery example</p>
+
+    <script>
+        $(document).ready(function(){
+
+            // Animation
+            $("#animate").click(function(){
+                $("#box").animate({
+                    left: '200px',
+                    height: '350px',
+                    width: '150px'
+                }, 1000);
+            });
+
+            // Chaining + Class
+            $("#style").click(function(){
+                $("#text")
+                    .addClass("highlight")
+                    .fadeOut(1000)
+                    .fadeIn(1000);
+            });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects</title>
+      <!--Load jQuery First -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--(Optional) jQuery Migrate -->
+    <script src="https://code.jquery.com/jquery-migrate-3.6.0.min.js"></script>
+    
+</head>
+<body>
+<!-- jQuery provides built-in animation effects. Some of the commonly used effects include:
+    ✔ Effects:
+     hide()
+     show()
+     toggle()
+     fadeIn()
+     fadeOut()
+     slideUp()
+     slideDown() -->
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+
+    <div id="box" style="width:200px;height:200px;background:red;margin-top:20px;"></div>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#box").hide(1000);
+            });
+
+            $("#show").click(function(){
+                $("#box").show(1000);
+            });
+
+            $("#toggle").click(function(){
+                $("#box").toggle(1000);
+            });
+        });
+    </script>
+</body>
+</html>
